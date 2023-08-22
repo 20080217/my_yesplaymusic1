@@ -100,11 +100,10 @@ export default {
     login: 'Login',
     loginWithEmail: 'Login with Email',
     loginWithPhone: 'Login with Phone',
-    notice: `YesPlayMusic promises not to save any of your account information to the cloud.<br />
-      Your password will be MD5 encrypted locally and then transmitted to NetEase Music API.<br />
-      YesPlayMusic is not the official website of NetEase Music, please consider carefully before entering account information. You can also go to <a href="https://github.com/stark81/YesPlayMusic/">YesPlayMusic's GitHub repository</a> to build and use the self-hosted NetEase Music API.`,
+    notice: `AymaoMusic promises not to save any of your account information to the cloud.<br />
+      Your password will be MD5 encrypted locally and then transmitted to NetEase Music API.`,
     noticeElectron: `Your password will be MD5 encrypted locally and then transmitted to NetEase Music API.<br />
-      YesPlayMusic promises not to save any of your account information to the cloud.<br />`,
+    AymaoMusic promises not to save any of your account information to the cloud.<br />`,
   },
   mv: {
     moreVideo: 'More Videos',
@@ -145,10 +144,14 @@ export default {
     language: 'Languages',
     musicQuality: {
       text: 'Music Quality',
-      low: 'Low',
-      medium: 'Medium',
-      high: 'High',
+      low: 'standard',
+      medium: 'higher',
+      high: 'exhigh',
       lossless: 'Lossless',
+      hires: 'HI-Res',
+      jyeffect: 'HD surround sound',
+      sky: 'Immersion surround sound',
+      jymaster: 'Ultra clear'
     },
     cacheLimit: {
       text: 'Songs Cache limit',

@@ -282,7 +282,6 @@ export default {
     line-height: 80px;
     height: 80px;
     overflow: hidden;
-    padding-left: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -292,7 +291,7 @@ export default {
       label {
         padding: 8px 20px;
         border-radius: 8px;
-        margin-left: 10px;
+        margin-left: 2px !important;
         opacity: 0.5;
 
         &:hover {
@@ -310,7 +309,7 @@ export default {
 
   #Container,
   #floorContainer {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 224px);
     overflow: auto;
     .one-comment {
       margin: 5px 0;

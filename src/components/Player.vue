@@ -169,7 +169,7 @@
 
           <button-icon
             class="lyrics-button"
-            title="歌词"
+            title="展开歌词"
             style="margin-left: 12px"
             @click.native="toggleLyrics"
             ><svg-icon icon-class="arrow-up"

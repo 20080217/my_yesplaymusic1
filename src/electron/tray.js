@@ -258,7 +258,7 @@ function createWindowLinuxTray(win, eventEmitter) {
   let icon = getIcon();
   let tray = new Tray(icon);
 
-  tray.setToolTip('YesPlayMusic');
+  tray.setToolTip('AymaoMusic');
 
   nativeTheme.on('updated', () => {
     let icon = getIcon();

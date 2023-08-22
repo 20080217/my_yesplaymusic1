@@ -36,7 +36,7 @@
             <option value="en">🇬🇧 English</option>
             <option value="tr">🇹🇷 Türkçe</option>
             <option value="zh-CN">🇨🇳 简体中文</option>
-            <option value="zh-TW">繁體中文</option>
+            <option value="zh-TW">🇨🇳 繁體中文</option>
           </select>
         </div>
       </div>
@@ -78,19 +78,30 @@
         </div>
         <div class="right">
           <select v-model="musicQuality">
-            <option value="128000">
-              {{ $t('settings.musicQuality.low') }} - 128Kbps
+            <option value="standard">
+              {{ $t('settings.musicQuality.standard') }}
             </option>
-            <option value="192000">
-              {{ $t('settings.musicQuality.medium') }} - 192Kbps
+            <option value="higher">
+              {{ $t('settings.musicQuality.higher') }}
             </option>
-            <option value="320000">
-              {{ $t('settings.musicQuality.high') }} - 320Kbps
+            <option value="exhigh">
+              {{ $t('settings.musicQuality.exhigh') }}
             </option>
-            <option value="flac">
-              {{ $t('settings.musicQuality.lossless') }} - FLAC
+            <option value="lossless">
+              {{ $t('settings.musicQuality.lossless')}}
             </option>
-            <option value="999000">Hi-Res</option>
+            <option value="hires">
+              {{ $t('settings.musicQuality.hires') }}
+            </option>
+            <option value="jyeffect">
+              {{ $t('settings.musicQuality.jyeffect')}}
+            </option>
+            <option value="sky">
+              {{ $t('settings.musicQuality.sky')}}
+            </option>
+            <option value="jymaster">
+              {{ $t('settings.musicQuality.jymaster')}}
+            </option>
           </select>
         </div>
       </div>
@@ -835,19 +846,9 @@
       <div class="footer">
         <p class="author"
           >MADE BY
-          <a href="https://github.com/stark81" target="_blank">stark81</a></p
+          <a href="https://www.aymao.com/" target="_blank">AymaoMusic</a></p
         >
         <p class="version">v{{ version }}</p>
-
-        <a
-          v-if="!isElectron"
-          href="https://vercel.com/?utm_source=ohmusic&utm_campaign=oss"
-        >
-          <img
-            height="36"
-            src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-          />
-        </a>
       </div>
     </div>
   </div>
@@ -1021,7 +1022,7 @@ export default {
     },
     musicQuality: {
       get() {
-        return this.settings.musicQuality ?? 320000;
+        return this.settings.musicQuality ?? 'standard';
       },
       set(value) {
         if (value === this.settings.musicQuality) return;

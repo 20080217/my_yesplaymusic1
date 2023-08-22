@@ -18,7 +18,7 @@ export default {
   showLyrics: false,
   updateFlag: true,
   enableScrolling: true,
-  title: 'YesPlayMusic',
+  title: 'AymaoMusic',
   liked: {
     songs: [],
     songsWithDetails: [], // 只有前12首

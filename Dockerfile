@@ -1,13 +1,13 @@
-FROM node:16.13.1-alpine as build
+FROM node:16.13.1 as build
 ENV VUE_APP_NETEASE_API_URL=/api
 WORKDIR /app
-RUN apk add --no-cache python3 make g++ git
+RUN apt-get update && apt-get install -y python3 make g++ git
 COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
 RUN yarn build
 
-FROM nginx:1.20.2-alpine as app
+FROM nginx:1.25.2-alpine as app
 
 COPY --from=build /app/package.json /usr/local/lib/
 

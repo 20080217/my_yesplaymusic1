@@ -100,10 +100,9 @@ export default {
     login: 'Giriş Yap',
     loginWithEmail: 'Email ile giriş yap',
     loginWithPhone: 'Phone ile giriş yap',
-    notice: `YesPlayMusic hesabınızın hiçbir bilgisini kaydetmeyeceğine dair söz veriyor<br />
-      Şifren MD5 şifreleme ile yerel olarak şifrelenir ve daha sonra NetEase Müzik API'sine gönderilir<br />
-      YesPlayMusic, NetEase Music'in resmi websitesi değildir, lütfen hesap bilgilerinizi girmeden önce dikkatlice düşününüz. Aynı zamanda, Kendi NetEase Musix API'nızı host etmek için <a href="https://github.com/stark81/YesPlayMusic">YesPlayMusic'in GitHub Repo'suna</a> gidebilirsiniz.`,
-    noticeElectron: `YesPlayMusic hesabınızın hiçbir bilgisini kaydetmeyeceğine dair söz veriyor<br />
+    notice: `AymaoMusic hesabınızın hiçbir bilgisini kaydetmeyeceğine dair söz veriyor<br />
+      Şifren MD5 şifreleme ile yerel olarak şifrelenir ve daha sonra NetEase Müzik API'sine gönderilir`,
+    noticeElectron: `AymaoMusic hesabınızın hiçbir bilgisini kaydetmeyeceğine dair söz veriyor<br />
       Şifren MD5 şifreleme ile yerel olarak şifrelenir ve daha sonra NetEase Müzik API'sine gönderilir<br />`,
   },
   mv: {
@@ -143,11 +142,15 @@ export default {
     logout: 'ÇIKIŞ YAP',
     language: 'Diller',
     musicQuality: {
-      text: 'Müzik Kalitesi',
-      low: 'Düşük',
-      medium: 'Orta',
-      high: 'Yüksek',
-      lossless: 'Kaliteli',
+      text: 'Müzik kalitesi',
+      low: 'standart',
+      medium: 'yüksek',
+      high: 'exhigh',
+      lossless: 'Kayıp olmayan',
+      hires: 'HI-Res',
+      jyeffect: 'HD çevre sesi',
+      sky: 'Sesi sarsıntılıyor.',
+      jymaster: 'Ultra temiz'
     },
     cacheLimit: {
       text: 'Şarkılar Önbellek sınırı',

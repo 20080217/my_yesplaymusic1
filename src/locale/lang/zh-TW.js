@@ -97,15 +97,11 @@ export default {
     login: '登入',
     loginWithEmail: '信箱登入',
     loginWithPhone: '手機號碼登入',
-    notice: `YesPlayMusic 承諾不會保存您的任何帳戶資訊到雲端。<br />
+    notice: `AymaoMusic 承諾不會保存您的任何帳戶資訊到雲端。<br />
         您的密碼會在本地進行 MD5 加密後再傳輸到網易雲 API。<br />
-        YesPlayMusic 並非網易雲官方網站，輸入帳戶資訊前請慎重考慮。 您也可以前往
-        <a href="https://github.com/stark81/YesPlayMusic"
-          >YesPlayMusic 的 GitHub 原始碼 Repo</a
-        >
-        自行編譯並使用自託管的網易雲 API。`,
+        AymaoMusic 並非網易雲官方網站，輸入帳戶資訊前請慎重考慮。`,
     noticeElectron: `您的密碼會在本地進行 MD5 加密後再傳輸到網易雲 API。<br />
-        YesPlayMusic 不會傳輸你的帳戶資料到任何非網易雲音樂官方的伺服器。<br />`,
+    AymaoMusic 不會傳輸你的帳戶資料到任何非網易雲音樂官方的伺服器。<br />`,
   },
   mv: {
     moreVideo: '更多影片',
@@ -146,10 +142,14 @@ export default {
     language: '語言',
     musicQuality: {
       text: '音質選擇',
-      low: '普通',
-      medium: '較高',
-      high: '極高',
+      standard: '標準',
+      higher: '较高',
+      exhigh: '較高',
       lossless: '無損',
+      hires: 'HI-Res',
+      jyeffect: '高清環繞聲',
+      sky: '沉浸環繞聲',
+      jymaster: '超清母帶'
     },
     cacheLimit: {
       text: '歌曲快取上限',

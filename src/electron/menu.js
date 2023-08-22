@@ -157,7 +157,7 @@ export function createMenu(win, store) {
               {
                 role: 'window',
                 id: 'window',
-                label: 'YesPlayMusic',
+                label: 'AymaoMusic',
                 type: 'checkbox',
                 checked: true,
                 click: () => {
@@ -176,15 +176,7 @@ export function createMenu(win, store) {
     {
       label: '帮助',
       submenu: [
-        {
-          label: 'GitHub',
-          click: async () => {
-            const { shell } = require('electron');
-            await shell.openExternal(
-              'https://github.com/stark81/YesPlayMusic/'
-            );
-          },
-        },
+        
         {
           label: 'Electron',
           click: async () => {

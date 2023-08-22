@@ -16,17 +16,15 @@ import {
  */
 export function getMP3(id) {
   const getBr = () => {
-    // 当返回的 quality >= 400000时，就会优先返回 hi-res
-    const quality = store.state.settings?.musicQuality ?? '320000';
-    return quality === 'flac' ? '350000' : quality;
+    const quality = store.state.settings?.musicQuality ?? 'standard';
+    return quality;
   };
-
   return request({
-    url: '/song/url',
+    url: '/song/url/v1',
     method: 'get',
     params: {
       id,
-      br: getBr(),
+      level: getBr(),
     },
   });
 }

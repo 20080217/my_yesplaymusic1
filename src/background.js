@@ -186,7 +186,7 @@ class Background {
         isWindows ||
         (isLinux && this.store.get('settings.linuxEnableCustomTitlebar'))
       ),
-      title: 'YesPlayMusic',
+      title: 'AymaoMusic',
       show: false,
       webPreferences: {
         webSecurity: false,
@@ -265,32 +265,7 @@ class Background {
   }
 
   checkForUpdates() {
-    if (isDevelopment) return;
-    log('checkForUpdates');
-    autoUpdater.checkForUpdatesAndNotify();
-
-    const showNewVersionMessage = info => {
-      dialog
-        .showMessageBox({
-          title: '发现新版本 v' + info.version,
-          message: '发现新版本 v' + info.version,
-          detail: '是否前往 GitHub 下载新版本安装包？',
-          buttons: ['下载', '取消'],
-          type: 'question',
-          noLink: true,
-        })
-        .then(result => {
-          if (result.response === 0) {
-            shell.openExternal(
-              'https://github.com/stark81/YesPlayMusic/releases/'
-            );
-          }
-        });
-    };
-
-    autoUpdater.on('update-available', info => {
-      showNewVersionMessage(info);
-    });
+    return;
   }
 
   handleWindowEvents() {
@@ -351,7 +326,7 @@ class Background {
           width: 800,
           height: 600,
           titleBarStyle: 'default',
-          title: 'YesPlayMusic',
+          title: 'AymaoMusic',
           webPreferences: {
             webSecurity: false,
             nodeIntegration: true,

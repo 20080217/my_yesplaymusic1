@@ -42,6 +42,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@font-face {
+    font-family: 'MyFont';
+    src: url('../assets/fonts/Barlow-Regular.woff2') format('woff2'),
+         url('../assets/fonts/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 div {
   form {
     display: flex;
@@ -49,6 +56,7 @@ div {
     .comment_box {
       // display: inline-block;
       color: var(--color-text);
+      font-family: 'MyFont', sans-serif;
       border-radius: 12px 0 0 12px;
       width: 100%;
       height: 60px;
@@ -62,6 +70,7 @@ div {
     .comment_box::placeholder {
       opacity: 0.6;
       color: var(--color-text);
+      font-family: 'MyFont', sans-serif;
     }
     .commit_button {
       text-align: center;
