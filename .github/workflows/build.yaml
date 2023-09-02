@@ -77,7 +77,7 @@ jobs:
             @unblockneteasemusic/rust-napi-linux-arm64-gnu@${{steps.get_unm_version.outputs.unmver}} \
             @unblockneteasemusic/rust-napi-linux-arm-gnueabihf@${{steps.get_unm_version.outputs.unmver}}
         shell: bash
-
+      
       - name: Build/release Electron app
         uses: samuelmeuli/action-electron-builder@v1.6.0
         env:
@@ -95,7 +95,7 @@ jobs:
           release: ${{ startsWith(github.ref, 'refs/tags/v') }}
 
           use_vue_cli: true
-
+          run: ls -la dist_electron/    
       - uses: actions/upload-artifact@v3
         with:
           name: Aymaomusic-mac
